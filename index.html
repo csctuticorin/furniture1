@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="homepage.js"></script>
+    
+</head>
+<body>
+    <div class="offersline">
+        <span>Use code Super (Till 25th April) to get up to 65% off + Additional 10% off with Bank offers</span>
+        <span>100+ Furniture Stores Across India. Come, Visit Us!</span>
+    </div>
+    
+    <div class="nav">
+            <!-- Checkbox for toggling -->
+    <input type="checkbox" id="nav-toggle">
+
+    <!-- button -->
+    <label for="nav-toggle" class="nav-toggle-label"> <i class="fa-solid fa-bars"></i></label>
+
+    <!-- Navigation Bar -->
+    <div class="nav-wrapper">
+        <p>Hello User!</p>
+        <a href="homepage.html">Home</a>
+        <a href="homepage.html">About</a>
+        <a href="homepage.html">Services</a>
+        <a href="homepage.html">Contact</a>
+    </div>
+
+    <!-- Clicking anywhere outside should close the menu -->
+    <main onclick="document.getElementById('nav-toggle').checked = false;"></main>
+        <input type="text" placeholder="Search 5,000+ Products">
+        <div class="Bulk">
+            <p><a href="homepage.html"><i class="fa-solid fa-house"></i></a></p>
+            <p><i class="fa-solid fa-heart"></i></p>
+            <p onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></p>
+            <p><a href="login1.html"><i class="fa-solid fa-user"></i></a></p>
+    </div>
+    <br>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <span>Cart Lists</span>
+            <button onclick="toggleCart()" class="cross">X</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total" id="cart-total">Total: $0</div>
+        <div class="cart-buttons">
+            <button class="checkout-btn"><a href="payment.html" style="color: white; text-decoration: none;">Proceed to Pay</a></button>
+            
+        </div>
+    </div>
+        <br>
+        <ul class="option">
+            <li><a href="Mattress.html">Mattress</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="bedroom.html">Bedroom</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="hall.html">Hall</a></li>
+            <li><a href="offers.html">Offers</a></li>
+        </ul>
+    </div>
+    
+
+   
+   <div class="imcont">
+    <!-- <div class="slidepara">
+        <p><h3>SALES ENDS IN:</h3></p>
+    </div> -->
+    <div class="picture">
+        <img src="offersimg.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <img src="offers1img.jpg" alt="">
+    </div>
+    <div class="slideshow-container">
+        <div   class="slides active"><img src="sliderimg1.jpg"/></div>
+        <div class="slides"><img src="slider2.webp"/></div>
+        <div class="slides"><img src="sliderimg3.jpg"/></div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    
+   </div>
+   <script>
+    let slideIndex = 0;
+    showSlide(slideIndex);
+
+    function moveSlide(n) {
+        showSlide(slideIndex += n);
+      }
+      
+    function showSlide(n) {
+        let slides = document.querySelectorAll('.slides');
+        if (n >= slides.length) slideIndex = 0;
+        if (n < 0) slideIndex = slides.length - 1;
+      
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[slideIndex].classList.add('active');
+      }
+      
+      
+
+    setInterval(() => moveSlide(1), 3000); // Auto slide every 3 seconds
+  </script>
+
+   <h2>Shop By Categories</h2>
+   <div class="product-card">
+    <div class="product-face front">
+        <img src="mattressimg.jpg" alt="Product 1">
+    </div>
+    <div class="product-face back">
+        <h3>Mattress Items</h3>
+        <p><b>They are simply constructed and were traditionally homemade. Because they are fairly thin and light, they are layered to form a bed.
+            Innerspring mattresses commonly consist of</b></p>
+        <a href="Mattress.html"><button class="buy-now">Show More</button></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-face front">
+        <img src="diningimg.jpg" alt="Product 2">
+    </div>
+    <div class="product-face back">
+        <h3>DiningItems</h3>
+        <p><b>Dining tables are often the focal point, available in a range of shapes, sizes, and materials, from wood to glass or metal, catering to different tastes and room sizes. </b></p>
+        <a href="dining.html"><button class="buy-now">Show More</button></a>
+    </div>
+</div>
+<div class="product-card">
+    <div class="product-face front">
+        <img src="bedimg.jpeg" alt="Product 2">
+    </div>
+    <div class="product-face back">
+        <h3>Bedroom Items</h3>
+        <p><b>The bed, often the centerpiece of the room, comes in various sizes and styles, from platform beds to traditional frames, and can be made of wood, metal, or upholstered materials. </b></p>
+        <a href="bedroom.html"><button class="buy-now">Show More</button></a>
+    </div>
+</div>
+<div class="product-card">
+    <div class="product-face front">
+        <img src="kitchenimg.jpg" alt="Product 2">
+    </div>
+    <div class="product-face back">
+        <h3>Kitchen Items</h3>
+        <p><b>Kitchen furniture is designed to enhance both the functionality and aesthetic appeal of one of the most important spaces in the home. </b></p>
+        <a href="kitchen.html"><button class="buy-now">Show More</button></a>
+    </div>
+</div>
+<div class="product-card">
+    <div class="product-face front">
+        <img src="hallimg.jpg" alt="Product 2">
+    </div>
+    <div class="product-face back">
+        <h3>Hall Items</h3>
+        <p><b>Hall furniture is designed to create a welcoming and functional entryway or living space that serves as the first impression of a home. </b> </p>
+        <a href="hall.html"><button class="buy-now">Show More</button></a>
+    </div>
+</div>
+<br>
+   <div class="footer">
+    <div class="footerpage">
+      <div class="logo">
+        <p>Careers</p>
+        <p>BecameDealer</p>
+        <p>InvesterRelation</p>
+        <p>BusinessOrders</p>
+        <p>MediaQuries</p>
+        <p>MediaCoverage</p>
+    </div>
+        <div class="Product">
+            <h3>All Product Offers</h3>
+               <p>Compaigns</p>
+               <p>WorkFromHomeQuiz</p>
+               <p>SleepSurvey</p>
+               <p>SleepInternship </p>
+               <p>DreamHomeSurvey </p>
+               <p>Selections</p>
+        </div>
+        <div class="terms">
+            <h3>Terms of Service</h3>
+                <p>Policies</p>
+                <p>FAQs</p>
+                <p>Shipping</p>
+                <p>Payment</p>
+                <p>Refunds</p>
+                <p>Warrenty</p>
+        </div>
+        <div class="About">
+                <p>Help</p>
+                <p>About Us</p>
+                <p>Contact Us</p> 
+                <p>Ph No:1234567890</p>
+                <p>Email:abcde@gmail.com</p>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

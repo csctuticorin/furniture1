@@ -1,0 +1,488 @@
+.body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* height: 50%; */
+    display: flex;
+    box-sizing: border-box;
+    overflow-y: hidden;
+
+}
+.offersline{
+     width: 100%;
+     height: 50px;
+     background-color:burlywood;
+     text-align: center;
+     color: aliceblue;
+     padding: 5px;
+     font-size: 20px;
+}
+.offersline span{
+    font-size: 25px;
+    position: absolute;
+    font-style: bold;
+    color: black;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    animation: hi 6s infinite;
+}
+.offersline span:nth-child(1){
+    animation-delay: 0s;
+}
+.offersline span:nth-child(2){
+    animation-delay: 3s;
+}
+@keyframes hi{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        content: hello;
+    }
+}
+/* h1{
+    position: relative;
+    top: 3px;
+    word-spacing: 10px;
+} */
+.nav{
+   width: 100%;
+   height: 130px;
+   background-color: brown;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 15px;
+}
+.cart-icon {
+    cursor: pointer;
+    position: relative;
+    bottom: 16px;
+}
+.cart-count {
+    position: absolute;
+    background: rgb(250, 248, 248);
+    left: 120px;
+    color: black;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    display: none;
+}
+.cart {
+    display: none;
+    position: absolute;
+    top: 120px;
+    width: 250px;
+    height: 290px;
+    background: #f4f4f4;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 2;
+}
+.cart h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 0 10px;
+    color: black;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: black;
+}
+.cart-total {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    top: 170px;
+    text-decoration: none;
+}
+.checkout-btn:hover {
+    background: #0056b3;
+    text-decoration: none;
+}
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+button:hover {
+    background: #218838;
+}
+.products {
+    padding: 20px;
+} 
+.nav i{
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+    top: 40px;
+}
+.icon{
+    position: relative;
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    right: 70px;
+    bottom: 30px;
+}
+input{
+    width: 580px;
+    height: 2px;
+    position: relative;
+    left: 70px;
+    top: 17px;
+    font-size: 20px;
+    padding: 15px;
+    word-spacing: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.nav li{
+    display: inline;
+    position: relative;
+    bottom: 20px;
+    font-size: 20px;
+    color: white;
+    padding: 12px;
+    margin: 30px;
+}
+.Bulk{
+  justify-content: end;
+  text-align: end;
+    position: relative;
+    display: flex;
+    right: 190px;
+    bottom: 60px;
+    font-size: 15px;
+    gap: 40px;
+    color: white;
+}
+
+.li  a{
+    background-color: white;
+    text-decoration: none;
+}
+.li i{
+    position: relative;
+    bottom: 200px;
+}
+.option{
+    position: relative;
+    top: 14px;
+    bottom: 25px;
+    word-spacing: 60px;
+    padding: 5px;
+    margin: 45px;
+    display: inline;
+    gap: 10px;
+}
+.option li a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+
+}
+a i{
+    color: white;
+}
+a:hover i{
+    color: rgb(26, 13, 140);
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: blueviolet;
+}
+.cont{
+    width: 240px;
+    height: 499px;
+    position: relative;
+    top: 30px;
+    left: 70px;
+    border: 2px solid rgb(248, 244, 244);
+    box-shadow: 0 0 10px 2px gray;
+    border-radius: 20px;
+}
+img{
+    width: 210px;
+    height: 220px;
+    position: relative;
+    top: 7px;
+    left: 10px;
+    border: 5px solid rgb(249, 246, 246);
+    box-shadow: 0 0 10px 2px gray;
+    border-radius: 10px;
+}
+.image img{ 
+    transition: transform 0.3s ease;
+}
+.image:hover img{
+    transform: scale(1.1);
+}
+.button{
+    position: relative;
+    left: 75px;
+    bottom: 130px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #28a745;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 200px;
+}
+.button:hover{
+    background-color: #218838;
+    cursor: pointer;
+}
+.para{
+    position: relative;
+    color: black ;
+    bottom: 250px;
+    left: 80px;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    text-align: justify;
+    
+}
+.image-container {
+    width: 100px;
+    height: 100px;
+}
+.Product2{
+    position: relative;
+    left: 300px;
+    bottom: 639px;
+}
+.Product3{
+    position: relative;
+    left: 595px;
+    bottom: 1280px;
+}
+.Product4{
+    position: relative;
+    left: 893px;
+    bottom: 1920px;
+}
+.Product5{
+    position: relative;
+    bottom: 1996px;
+}
+.Product6{
+    position: relative;
+    bottom: 2640px;
+    left: 300px;
+}
+.Product7{
+    position: relative;
+    bottom: 3280px;
+    left: 599px;
+}
+.Product8{
+    position: relative;
+    left: 893px;
+    bottom: 3921px;
+    
+}
+.Product9{
+    position: relative;
+    bottom: 3990px;
+}
+.Product10{
+    position: relative;
+    left: 300px;
+    bottom: 4630px;
+}
+.Product11{
+    position: relative;
+    left: 603px;
+    bottom: 5270px;
+}
+.Product12{
+    position: relative;
+    left: 896px;
+    bottom: 5910px;
+}
+.boximg{
+    height: 100px;
+}
+.cart-sidebar {
+    position: fixed;
+    right: -350px;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: -4px 0px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.cart-sidebar.open {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-total {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    top: 380px;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+#cart-count{
+    position: relative;
+    left: 100px;
+    top: 20px;
+
+}
+.cross{
+    position: relative;
+    left: 100px;
+    bottom: 10px;
+}
+#nav-toggle {
+    display: none;
+}
+
+
+.nav-toggle-label {
+    position: absolute;
+    top: 40px;
+    left: -90px;
+    /* background-color: #333; */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    z-index: 2;
+}
+
+
+.nav-wrapper {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: #333;
+    transition: left 0.3s ease-in-out;
+    padding-top: 90px;
+    z-index: 1;
+    overflow-y: auto;
+}
+.nav-wrapper p{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 15px;
+}
+
+.nav-wrapper a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav-wrapper a:hover {
+    background:red;
+}
+
+/* Show menu when checkbox is checked */
+#nav-toggle:checked ~ .nav-wrapper {
+    left: 0;
+}
+
+/* Close menu when clicking outside */
+main {
+    /* min-height: 100%;
+    width: 100%;  */
+    transition: margin-left 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0); 
+}
+
+#nav-toggle:checked ~ main {
+    pointer-events: auto; /*enables pointer interactionslike hover etcs*/
+}
+
+/* Clicking on main will reset the checkbox */
+main:has(:not(#nav-toggle:checked)) {
+    display: block;
+}
