@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="offers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="offers.js"></script>
+</head>
+<body>
+    <div class="offersline">
+        <span>Use code Super (Till 25th April) to get up to 65% off + Additional 10% off with Bank offers</span>
+        <span>100+ Furniture Stores Across India. Come, Visit Us!</span>
+    </div>
+    
+    <div class="nav">
+                        <!-- Checkbox for toggling -->
+    <input type="checkbox" id="nav-toggle">
+
+    <!-- button -->
+    <label for="nav-toggle" class="nav-toggle-label"> <i class="fa-solid fa-bars"></i></label>
+
+    <!-- Navigation Bar -->
+    <div class="nav-wrapper">
+        <p>Hello User!</p>
+        <a href="index.html">Home</a>
+        <a href="homepage.html">About</a>
+        <a href="homepage.html">Services</a>
+        <a href="homepage.html">Contact</a>
+    </div>
+
+    <!-- Clicking anywhere outside should close the menu -->
+    <main onclick="document.getElementById('nav-toggle').checked = false;"></main>
+        <input type="text" placeholder="Search 5,000+ Products">
+        <div class="Bulk">
+            <p><a href="index.html"><i class="fa-solid fa-house"></i></a></p>
+            <p><i class="fa-solid fa-heart"></i></p>
+            <p onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></p>
+            <p><a href="login1.html"><i class="fa-solid fa-user"></i></a></p>
+    </div>
+    <br>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <span>Cart Lists</span>
+            <button onclick="toggleCart()" class="cross">X</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total" id="cart-total">Total: $0</div>
+        <div class="cart-buttons">
+            <button class="checkout-btn"><a href="payment.html" style="color: white; text-decoration: none;">Proceed to Pay</a></button>
+            
+        </div>
+    </div>
+        <ul class="option">
+            <li><a href="Mattress.html">Mattress</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="bedroom.html">Bedroom</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="hall.html">Hall</a></li>
+            <li><a href="offers.html">Offers</a></li>
+        </ul>
+    </div>
+</body>
+<div class="offers">
+    <img src="offerspage.avif" alt="" srcset="">
+</div>
+</html>
